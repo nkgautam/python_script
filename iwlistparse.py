@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # iwlistparse.py for Python 3.x
-# Hugo Chargois - 17 jan. 2010 - v.0.1
+# 
 # Parses the output of iwlist scan into a table
 import subprocess
 from collections import namedtuple
@@ -124,7 +124,7 @@ def print_table(table):
         justified_table.append(justified_line)
     for line in justified_table:
         for el in line:
-            print('{} '.format(el), end='')
+            print('{} '.format(el), end = '')
         print()
 
 
